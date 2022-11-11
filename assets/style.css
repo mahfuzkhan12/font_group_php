@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-subtitle {
+    font-size: 13px;
+    opacity: .8;
+}
+
+table{
+    margin-top: 20px;
+}
+thead{
+    background: #ededed80;
+}
+thead{
+    font-size: 16px;
+}
+tbody .fontname {
+    color: #696969e0;
+    font-weight: 600;
+}
+tbody .font_preview{
+    color: #515151;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ececec;
+}
+
+
+.page-link:focus {
+    box-shadow: none!important;
+}
+
+#error_meesage_font_upload div{
+    margin-top: 15px;
+}
+
+
+/** 
+#######          form part 
+##########################
+##########################
+**/
+#uplaod_form {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.upload_area .title{
+    font-size: 16px;
+    color: #626262e6;
+    margin-top: 20px;
+    /* text-align: center; */
+}
+
+.upload_area label {
+    width: 100%;
+}
+.upload_area .drop-area {
+    width: 100%;
+    margin: auto;
+    color: #929292;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cccccc21;
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 60px 0;
+}
+.drop-area .img img {
+    width: 50px;
+    height: 50px;
+}
+.drop-area .file_input{
+    display: none;
+}
+.drop-area .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.drop-area .wrapper div{
+    width: 100%;
+    text-align: center;
+}
+
+
+#drop-area.highlight {
+    border-color: purple;
+}
+
+#uplaod_form .preview_files{
+    margin-top: 20px;
+}
+#uplaod_form .preview_files .item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px auto 35px;
+    align-items: center;
+    padding: 5px 0;
+    background: #ffffff;
+    border-radius: 4px;
+    color: #464646;
+    border: 1px solid #00000036;
+    margin-bottom: 10px;
+}
+.submit_btn_wrapper{
+    margin-top: 20px;
+}
+
+#uplaod_form .preview_files .name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#uplaod_form .preview_files .delete_file_item_btn{
+    border: white;
+    background: none;
+    color: red;
+}
+
+#uplaod_form .preview_files img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+
+/**  end form part **/
+
+
+
+/* fonts list area */
+.uploaded_fonts_list {
+ margin-top: 30px;
+}
+/* end fonts list area */
+
+
+
+
+
+
+
+
+
+
+
+/* divider */
+.h-divider {
+    position: relative;
+    margin-top: 100px;
+}
+
+.h-divider .shadow_S {
+    overflow: hidden;
+    height: 20px;
+}
+
+.h-divider .shadow_S:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px black;
+}
+
+.h-divider .text {
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -33px;
+    left: 50%;
+    margin-left: -60px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white;
+}
+
+.h-divider .text i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+    text-align: center;
+    line-height: 50px;
+    font-style: normal;
+    color: #999;
+}
+
+.h-divider .text2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -35px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white;
+}
+
+.h-divider img {
+    position: absolute;
+    margin: 4px;
+    max-width: 60px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+}
+
+
+
+
+/* spinner */
+.overlay.hide{
+    display: none;
+}
+.overlay.show{
+    display: flex;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    z-index: 99999;
+}
+.overlay .overlay_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.overlay h3{
+    width: 100%;
+    text-align: center;
+    color: #ffff;
+}
+.spinner-square {
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 120px;
+}
+
+.spinner-square > .square {
+    width: 17px;
+    height: 80px;
+    margin: auto auto;
+    border-radius: 4px;
+}
+
+.square-1 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+}
+
+.square-2 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite;
+}
+
+.square-3 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 400ms infinite;
+}
+
+@keyframes square-anim {
+    0% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
+    20% {
+        height: 80px;
+    }
+    40% {
+        height: 120px;
+        background-color: rgb(111, 200, 240);
+    }
+    80% {
+        height: 80px;
+    }
+    100% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
+}
+
+
+
+
+/* create font groups */
+
+#sortable {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+#sortable li {
+    padding: 15px 5px 10px;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #80808063;
+}
+.form-group{
+    position: relative;
+}
+.label_move label {
+    order: -1;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+    transform: translateY(5px);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: #47474794;
+    left: 15px;
+}
+.label_move input::placeholder {
+    opacity: 0; 
+  }
+.label_move  input:focus + label {
+    transform: translateY(-11px);
+    font-size:10px;
+}
+label.fix {
+    transform: translateY(-10px);
+    font-size: 11px;
+    background: #fff;
+    width: auto;
+    height: auto;
+    padding: 0 8px;
+}
+
+.del_icon button{
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 5px;
+    color: red;
+    height: 100%;
+}
